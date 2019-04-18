@@ -5,10 +5,11 @@ var path = require("path");
 var PORT = process.env.PORT || 8080;
 
 var htmlRoutes = require('./app/routing/htmlRoutes');
+var apiRoutes = require("./app/routing/apiRoutes");
 
 // ...
 
-app.use('/', htmlRoutes)
+app.use("/", htmlRoutes, apiRoutes);
 
 
 
