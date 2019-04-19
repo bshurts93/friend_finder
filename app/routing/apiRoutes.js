@@ -1,13 +1,17 @@
 var express = require("express");
 var path = require("path");
 var router = express.Router();
+var friends = require("../data/friends");
 
 router.get("/api/friends", function (req, res) {
-    res.send("this is the api GET route");
+    res.json(friends.friends);
 });
 
 router.post("/api/friends", function (req, res) {
-    res.send("this is the api POST route");
+    // Handle incoming survey results
+
+
+    // Determine compatibility
 });
 
 
