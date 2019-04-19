@@ -16,21 +16,21 @@ router.post("/api/friends", function (req, res) {
     var name = survey.name;
     var imgLink = survey.image_link;
     var surveyNums = [];
-    console.log(survey);
 
+    // Fill array with just scores
     for (var i = 1; i <= 10; i++) {
         currentQuestion = "question" + i;
 
-        surveyNums.push(survey[currentQuestion]);
+        surveyNums.push(parseInt(survey[currentQuestion]));
     }
 
-    console.log((`Name: ${name}`));
-    console.log((`Image Link: ${imgLink}`));
-    console.log(surveyNums);
-
-
-
     // Determine compatibility
+    for (var i = 0; i < friends.friends.length; i++) {
+        var friendName = friends.friends[i].name;
+        console.log(`Difference between ${name} and ${friendName}`);
+
+        friends.getDiff(surveyNums, friends.friends[i].scores);
+    }
 });
 
 

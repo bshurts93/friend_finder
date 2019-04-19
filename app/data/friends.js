@@ -33,14 +33,14 @@ var friends = [
     }
 ]
 
-
+// Takes two arrays and gets total difference between each position
 function getDiff(user, guy) {
     var totalDiff = 0;
     for (var i = 0; i < user.length; i++) {
         totalDiff += Math.abs(user[i] - guy[i]);
     }
 
-    console.log(totalDiff);
+    console.log(`Total difference: ${totalDiff}`);
 }
 
 module.exports = {
