@@ -11,6 +11,13 @@ var apiRoutes = require("./app/routing/apiRoutes");
 
 app.use("/", htmlRoutes, apiRoutes);
 
+app.post("/api/friends", function (req, res) {
+    // Handle incoming survey results
+    var survey = req.body;
+    console.log("Response: " + survey);
+
+    // Determine compatibility
+});
 
 
 app.listen(PORT, function () {
