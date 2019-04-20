@@ -19,7 +19,6 @@ app.post("/api/friends", function (req, res) {
     // Determine compatibility
 });
 
-
 app.listen(PORT, function () {
     console.log("Server listening on port " + PORT);
 });

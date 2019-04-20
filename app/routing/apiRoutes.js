@@ -16,6 +16,7 @@ router.post("/api/friends", function (req, res) {
     var name = survey.name;
     var imgLink = survey.image_link;
     var surveyNums = [];
+    var friendDiffs = [];
 
     // Fill array with just scores
     for (var i = 1; i <= 10; i++) {
@@ -27,11 +28,18 @@ router.post("/api/friends", function (req, res) {
     // Determine compatibility
     for (var i = 0; i < friends.friends.length; i++) {
         var friendName = friends.friends[i].name;
-        console.log(`Difference between ${name} and ${friendName}`);
-
-        friends.getDiff(surveyNums, friends.friends[i].scores);
+        var currentDiff = friends.getDiff(surveyNums, friends.friends[i].scores);
+        var arrObj = {
+            friend: friendName,
+            difference: currentDiff
+        }
+        friendDiffs.push(arrObj);
     }
-});
 
+    console.log(friendDiffs);
+    // Get lowest diff and select that person
+    var lowestDifference = friendDiffs.reduce((min, obj) => obj.difference < min ? obj.difference : min, friendDiffs[0].difference);
+    console.log(lowestDifference);
+});
 
 module.exports = router;
