@@ -38,8 +38,15 @@ router.post("/api/friends", function (req, res) {
 
     console.log(friendDiffs);
     // Get lowest diff and select that person
-    var lowestDifference = friendDiffs.reduce((min, obj) => obj.difference < min ? obj.difference : min, friendDiffs[0].difference);
-    console.log(lowestDifference);
+    var lowestDiffNum = friendDiffs.reduce((min, obj) => obj.difference < min ? obj.difference : min, friendDiffs[0].difference);
+    var lowestDiffName = "";
+    console.log(lowestDiffNum);
+    for (var i = 0; i < friendDiffs.length; i++) {
+        if (friendDiffs[i].difference === lowestDiffNum) {
+            lowestDiffName = friendDiffs[i].friend;
+        }
+    }
+    console.log(lowestDiffName);
 });
 
 module.exports = router;

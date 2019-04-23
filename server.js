@@ -17,6 +17,7 @@ app.post("/api/friends", function (req, res) {
     console.log("Response: " + survey);
 
     // Determine compatibility
+
 });
 
 app.listen(PORT, function () {
