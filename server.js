@@ -2,6 +2,9 @@ var express = require("express");
 var app = express();
 var path = require("path");
 
+app.use(express.static(path.join(__dirname, '/public')));
+
+
 var PORT = process.env.PORT || 8080;
 
 var htmlRoutes = require('./app/routing/htmlRoutes');

@@ -47,6 +47,12 @@ router.post("/api/friends", function (req, res) {
         }
     }
     console.log(lowestDiffName);
+    var match = {
+        name: lowestDiffName,
+        num: lowestDiffNum
+    };
+    res.send(match);
+
 });
 
 module.exports = router;
