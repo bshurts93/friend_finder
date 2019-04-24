@@ -1,17 +1,52 @@
 body {
-    background-color: rgb(207, 207, 207);
+    background-color: #B9FFFC;
+    color: #F5F1E3;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgb(12, 123, 138);
+}
+
+button,
+.btn-primary {
+    background-color: #F5F1E3!important;
+    color: #b4b2a4!important;
+    border: none;
+    border-color: rgba(0, 0, 0, 0)!important;
+}
+
+button:hover {
+    color: black!important;
+    border-color: black!important;
 }
 
 /* BOOTSTRAP ELEMENTS */
+.jumbotron {
+    background-color: #1B9AAA;
+}
+
+
 .container {
     margin: 5rem auto;
+}
+
+.form-control {
+    background-color: #F5F1E3;
+    color: #b4b2a4!important;
+}
+
+.modal-content {
+    background-color: #DDDBCB;
+    color: #1B9AAA;
 }
 
 /* SURVEY */
 
 .user,
 .questions {
-    background-color: rgba(220, 231, 240, 0.774);
+    background-color: #1B9AAA;
     padding: 1.5rem 1.5rem;
     border-radius: 7px;
 }
