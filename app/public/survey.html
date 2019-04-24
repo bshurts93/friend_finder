@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Friend Finder - Survey</title>
 </head>
@@ -16,143 +16,153 @@
 
     <div class="container">
         <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" name="name" id="name" placeholder="Dude McAwesome">
+            <div class="container user">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Dude McAwesome" required>
+                </div>
+                <div class="form-group">
+                    <label for="image-link">Link to Photo Image</label>
+                    <input type="text" class="form-control" name="image_link" id="image-link" placeholder="URL"
+                        required>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="image-link">Link to Photo Image</label>
-                <input type="text" class="form-control" name="image_link" id="image-link" placeholder="URL">
+
+
+            <div class="container questions">
+                <div class="form-group">
+                    <h4>Question 1</h4>
+                    <label for="question-1">Your mind is always buzzing with unexplored ideas and plans.</label>
+                    <select class="form-control" name="question1" id="question-1">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 2</h4>
+                    <label for="question-2">Generally speaking, you rely more on your experience than your
+                        imagination.</label>
+                    <select class="form-control" name="question2" id="question-2">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 3</h4>
+                    <label for="question-3">You find it easy to stay relaxed and focused even when there is some
+                        pressure.</label>
+                    <select class="form-control" name="question3" id="question-3">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 4</h4>
+                    <label for="question-4">You rarely do something just out of sheer curiosity.</label>
+                    <select class="form-control" name="question4" id="question-4">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 5</h4>
+                    <label for="question-5">People can rarely upset you.</label>
+                    <select class="form-control" name="question5" id="question-5">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 6</h4>
+                    <label for="question-6">It is often difficult for you to relate to other people’s feelings.</label>
+                    <select class="form-control" name="question6" id="question-6">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 7</h4>
+                    <label for="question-7">In a discussion, truth should be more important than people’s
+                        sensitivities.</label>
+                    <select class="form-control" name="question7" id="question-7">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 8</h4>
+                    <label for="question-8">You rarely get carried away by fantasies and ideas.</label>
+                    <select class="form-control" name="question8" id="question-8">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 9</h4>
+                    <label for="question-9">You think that everyone’s views should be respected regardless of whether
+                        they
+                        are supported by facts or not.</label>
+                    <select class="form-control" name="question9" id="question-9">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <h4>Question 10</h4>
+                    <label for="question-10">You feel more energetic after spending time with a group of people.</label>
+                    <select class="form-control" name="question10" id="question-10">
+                        <option disabled selected>Choose</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <button type="submit" id="submit-survey" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#match-modal"
+                    id="modal-btn" style="display: none">
+                    See match
+                </button>
             </div>
-            <div class="form-group">
-                <h4>Question 1</h4>
-                <label for="question-1">Your mind is always buzzing with unexplored ideas and plans.</label>
-                <select class="form-control" name="question1" id="question-1">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 2</h4>
-                <label for="question-2">Generally speaking, you rely more on your experience than your
-                    imagination.</label>
-                <select class="form-control" name="question2" id="question-2">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 3</h4>
-                <label for="question-3">You find it easy to stay relaxed and focused even when there is some
-                    pressure.</label>
-                <select class="form-control" name="question3" id="question-3">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 4</h4>
-                <label for="question-4">You rarely do something just out of sheer curiosity.</label>
-                <select class="form-control" name="question4" id="question-4">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 5</h4>
-                <label for="question-5">People can rarely upset you.</label>
-                <select class="form-control" name="question5" id="question-5">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 6</h4>
-                <label for="question-6">It is often difficult for you to relate to other people’s feelings.</label>
-                <select class="form-control" name="question6" id="question-6">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 7</h4>
-                <label for="question-7">In a discussion, truth should be more important than people’s
-                    sensitivities.</label>
-                <select class="form-control" name="question7" id="question-7">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 8</h4>
-                <label for="question-8">You rarely get carried away by fantasies and ideas.</label>
-                <select class="form-control" name="question8" id="question-8">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 9</h4>
-                <label for="question-9">You think that everyone’s views should be respected regardless of whether they
-                    are supported by facts or not.</label>
-                <select class="form-control" name="question9" id="question-9">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <h4>Question 10</h4>
-                <label for="question-10">You feel more energetic after spending time with a group of people.</label>
-                <select class="form-control" name="question10" id="question-10">
-                    <option disabled selected>Choose</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <button type="submit" id="submit-survey" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#match-modal" id="modal-btn"
-                style="display: none">
-                See match
-            </button>
+
+
         </form>
     </div>
 
@@ -186,20 +196,40 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
+
+        function validateForm() {
+            var isValid = true;
+            $('input[type=text]').each(function () {
+                if ($(this).val() === '') {
+                    console.log('validation failed');
+                    isValid = false;
+                }
+            });
+            $('select').each(function () {
+                if ($(this).val() === null) {
+                    console.log('validation failed');
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
         $("#submit-survey").on("click", function () {
             event.preventDefault();
             surveyArr = $("form").serializeArray();
-            // console.log(surveyArr);
 
-            $.post("/api/friends", surveyArr)
-                .then(function (match) {
-                    console.log(match);
-                    $("#match-name").text(match.name);
-                    $("#score-diff").text(match.num);
-                    $("#match-pic").attr("src", match.img);
-                });
+            if (validateForm()) {
+                $.post("/api/friends", surveyArr)
+                    .then(function (match) {
+                        console.log(match);
+                        $("#match-name").text(match.name);
+                        $("#score-diff").text(match.num);
+                        $("#match-pic").attr("src", match.img);
+                    });
 
-            $("#modal-btn").css("display", "inline-block");
+                $("#modal-btn").css("display", "inline-block");
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
         });
 
     </script>

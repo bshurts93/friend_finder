@@ -2,8 +2,8 @@ var express = require("express");
 var app = express();
 var path = require("path");
 
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public/style.css')));
+
+app.use(express.static(__dirname + '/app/public'));
 
 
 var PORT = process.env.PORT || 8080;

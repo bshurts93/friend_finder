@@ -1,5 +1,17 @@
 body {
-    background-color: blue;
-    color: red;
+    background-color: rgb(207, 207, 207);
 }
 
+/* BOOTSTRAP ELEMENTS */
+.container {
+    margin: 5rem auto;
+}
+
+/* SURVEY */
+
+.user,
+.questions {
+    background-color: rgba(220, 231, 240, 0.774);
+    padding: 1.5rem 1.5rem;
+    border-radius: 7px;
+}
