@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./style.css">
 
     <title>Friend Finder - Survey</title>
 </head>
@@ -149,8 +149,9 @@
                 </select>
             </div>
             <button type="submit" id="submit-survey" class="btn btn-primary">Submit</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#match-modal" id="modal-btn">
-                Launch demo modal
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#match-modal" id="modal-btn"
+                style="display: none">
+                See match
             </button>
         </form>
     </div>
@@ -172,7 +173,6 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
             </div>
         </div>
@@ -198,6 +198,8 @@
                     $("#score-diff").text(match.num);
                     $("#match-pic").attr("src", match.img);
                 });
+
+            $("#modal-btn").css("display", "inline-block");
         });
 
     </script>
