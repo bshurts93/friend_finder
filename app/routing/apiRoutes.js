@@ -29,27 +29,30 @@ router.post("/api/friends", function (req, res) {
     for (var i = 0; i < friends.friends.length; i++) {
         var friendName = friends.friends[i].name;
         var currentDiff = friends.getDiff(surveyNums, friends.friends[i].scores);
+        var currentImg = friends.friends[i].photo;
         var arrObj = {
             friend: friendName,
-            difference: currentDiff
+            difference: currentDiff,
+            image: currentImg
         }
         friendDiffs.push(arrObj);
     }
 
-    console.log(friendDiffs);
     // Get lowest diff and select that person
-    var lowestDiffNum = friendDiffs.reduce((min, obj) => obj.difference < min ? obj.difference : min, friendDiffs[0].difference);
-    var lowestDiffName = "";
-    console.log(lowestDiffNum);
+    var matchNum = friendDiffs.reduce((min, obj) => obj.difference < min ? obj.difference : min, friendDiffs[0].difference);
+    var matchName = "";
+    var matchImg = "";
     for (var i = 0; i < friendDiffs.length; i++) {
-        if (friendDiffs[i].difference === lowestDiffNum) {
-            lowestDiffName = friendDiffs[i].friend;
+        if (friendDiffs[i].difference === matchNum) {
+            matchName = friendDiffs[i].friend;
+            matchImg = friendDiffs[i].image;
         }
     }
-    console.log(lowestDiffName);
+
     var match = {
-        name: lowestDiffName,
-        num: lowestDiffNum
+        name: matchName,
+        num: matchNum,
+        img: matchImg
     };
     res.send(match);
 
